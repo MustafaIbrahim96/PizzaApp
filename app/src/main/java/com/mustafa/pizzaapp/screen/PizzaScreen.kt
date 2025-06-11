@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
@@ -14,10 +13,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -33,9 +30,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mustafa.pizzaapp.R
 import com.mustafa.pizzaapp.screen.composable.BoxImagePizza
+import com.mustafa.pizzaapp.screen.composable.ButtonAddToCard
 import com.mustafa.pizzaapp.screen.composable.HeaderPizzaTitle
 import com.mustafa.pizzaapp.screen.composable.RowButtonsPizzaSize
-import com.mustafa.pizzaapp.ui.theme.ButtonColor
 import com.mustafa.pizzaapp.ui.theme.Green10AColor
 
 @Composable
@@ -79,37 +76,12 @@ fun PizzaContent() {
         Spacer(Modifier.weight(0.6f))
         RowCustomizePizzaIngredient(onClick = {})
         Spacer(Modifier.weight(1f))
-        Button(
-            onClick = {},
-            modifier = Modifier,
-            shape = RoundedCornerShape(12.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = ButtonColor,
-            )
-        ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.padding(horizontal = 6.dp, vertical = 3.dp)
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.ic_card_shopping),
-                    contentDescription = "icon shopping"
-                )
-
-                Text(
-                    modifier = Modifier.padding(start = 8.dp),
-                    text = "Add to card",
-                    style = TextStyle(
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.Medium,
-                        color = Color.White
-                    )
-                )
-            }
-        }
+        ButtonAddToCard()
         Spacer(Modifier.weight(1f))
     }
 }
+
+
 
 @Composable
 fun RowCustomizePizzaIngredient(
