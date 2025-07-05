@@ -1,4 +1,4 @@
-package com.mustafa.pizzaapp.screen.composable
+package com.mustafa.pizzaapp.presentation.screen.composable
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -17,7 +17,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mustafa.pizzaapp.R
-import com.mustafa.pizzaapp.ui.theme.ButtonColor
+import com.mustafa.pizzaapp.app.theme.ButtonColor
 
 @Composable
 fun ButtonAddToCard() {
@@ -32,7 +32,7 @@ fun ButtonAddToCard() {
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.padding(horizontal = 6.dp, vertical = 3.dp)
+            modifier = Modifier.padding(horizontal = 6.dp, vertical = 4.dp)
         ) {
             Icon(
                 painter = painterResource(R.drawable.ic_card_shopping),

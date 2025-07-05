@@ -1,4 +1,4 @@
-package com.mustafa.pizzaapp.ui.theme
+package com.mustafa.pizzaapp.app.theme
 
 import androidx.compose.ui.graphics.Color
 

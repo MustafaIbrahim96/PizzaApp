@@ -1,4 +1,4 @@
-package com.mustafa.pizzaapp.ui.theme
+package com.mustafa.pizzaapp.app.theme
 
 import android.app.Activity
 import android.os.Build

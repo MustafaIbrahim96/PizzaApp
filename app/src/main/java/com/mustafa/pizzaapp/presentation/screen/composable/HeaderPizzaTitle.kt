@@ -1,4 +1,4 @@
-package com.mustafa.pizzaapp.screen.composable
+package com.mustafa.pizzaapp.presentation.screen.composable
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
